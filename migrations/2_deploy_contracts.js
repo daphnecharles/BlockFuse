@@ -1,4 +1,4 @@
-const MyPet = artifacts.require('Pet')
+const   BlockFuse = artifacts.require('BlockFuseMint')
 module.exports = function (deployer) {
-  deployer.deploy(MyPet)
+  deployer.deploy(BlockFuse)
 }
