@@ -20,8 +20,8 @@ BlockFuse integrate with the following technologies:
 
 # Developer Instructions
 
-### `yarn add`
+### `npm install`
 
-### `yarn build`
+### `npm build`
 
-### `yarn start`
+### `npm start`
