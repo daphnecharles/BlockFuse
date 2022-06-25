@@ -19,6 +19,9 @@ BlockFuse integrate with the following technologies:
 
 
 # Developer Instructions
-### `yarn start`
+
+### `yarn add`
 
 ### `yarn build`
+
+### `yarn start`
