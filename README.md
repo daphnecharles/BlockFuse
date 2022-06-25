@@ -26,7 +26,7 @@ BlockFuse integrate with the following technologies:
 * Smart contract deployed on Polygon Mumbai testnet:
 * Solidity code for smart contract:
 * NFT hosted on IPFS (NFT.Storage):
-* dApp deployed on IPFS (Fleek):
+* dApp deployed on IPFS (Fleek): floral-boat-4610.on.fleek.co
 * WalletConnect code:
 * Lens Protocol code:
 * Livepeer code:
