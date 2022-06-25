@@ -9,6 +9,8 @@ import {
   useColorModeValue,
   createIcon,
 } from '@chakra-ui/react';
+import Testimonials from "./Testimonials"
+import Features from "./Features"
 
 export default function CallToActionWithAnnotation() {
   return (
@@ -59,19 +61,12 @@ export default function CallToActionWithAnnotation() {
                 right={-71}
                 top={'10px'}
               />
-              <Text
-                fontSize={'lg'}
-                fontFamily={'Caveat'}
-                position={'absolute'}
-                right={'-125px'}
-                top={'-15px'}
-                transform={'rotate(10deg)'}>
-                Starting at $15/mo
-              </Text>
             </Box>
           </Stack>
         </Stack>
       </Container>
+      <Features/>
+      <Testimonials/>
     </>
   );
 }
