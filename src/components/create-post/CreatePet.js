@@ -35,7 +35,7 @@ function CreatePet() {
   }
 
   const handleSubmit = async (e) => {
-    event.preventDefault()
+    e.preventDefault()
   try {
     setLoading(true)
     const client = new NFTStorage({ token: apiKey })
