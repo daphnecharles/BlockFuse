@@ -1,7 +1,19 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import {
+  Box,
+  Heading,
+  Container,
+  Text,
+  Button,
+  Stack,
+  Icon,
+  useColorModeValue,
+  createIcon,
+  Image
+} from '@chakra-ui/react';
 import './App.css'
-import { Navbar } from './components/layout/navbar/Navbar'
+import Navbar from './components/layout/navbar/Navbar'
 import Footer from './components/layout/footer/Footer'
 import Home from './components/home-container/home/Home'
 import PetDetails from './components/home-container/pet-details/PetDetails'
@@ -57,7 +69,7 @@ function App() {
   return (
     <Router>
       <ChakraProvider>
-      <div className="cl">
+      <Box className="cl" backgroundColor="#2d2c2c">
         <Navbar account={account} connectWallet={connectWallet} />
         <Route exact path="/" component={Home} />
         <Switch>
@@ -67,7 +79,7 @@ function App() {
           </Route>
         </Switch>
         <Footer />
-      </div>
+      </Box>
       </ChakraProvider>
     </Router>
   )

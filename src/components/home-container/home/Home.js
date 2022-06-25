@@ -8,9 +8,11 @@ import {
   Icon,
   useColorModeValue,
   createIcon,
+  Image
 } from '@chakra-ui/react';
 import Testimonials from "./Testimonials"
 import Features from "./Features"
+import logo from './../../../images/blockfuse-logo.png'
 
 export default function CallToActionWithAnnotation() {
   return (
@@ -21,7 +23,7 @@ export default function CallToActionWithAnnotation() {
           textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
           py={{ base: 20, md: 36 }}>
-          <Heading
+          {/* <Heading
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}>
@@ -29,7 +31,18 @@ export default function CallToActionWithAnnotation() {
             <Text as={'span'} color={'green.400'}>
               Fuse
             </Text>
-          </Heading>
+          </Heading> */}
+          <Image
+              alt={'Hero Image'}
+              fit={'cover'}
+              align={'center'}
+              w={'100%'}
+              h={'100%'}
+              src={logo}
+            />
+              <Heading as='h3' size='lg'>
+    Fusing Together Your Skill-Based Identity On-Chain
+  </Heading>
           <Text color={'gray.500'}>
           BlockFuse is a web3 smart recruitment platform designed for helping companies grow and hire the next generation of talent. 
           </Text>
@@ -40,18 +53,19 @@ export default function CallToActionWithAnnotation() {
             alignSelf={'center'}
             position={'relative'}>
             <Button
-              colorScheme={'green'}
-              bg={'green.400'}
+            className="brand-button"
+            bg="linear-gradient(90deg, rgba(255,105,22,1) 35%, rgba(247,179,0,1) 100%)"
               rounded={'full'}
               px={6}
               _hover={{
-                bg: 'green.500',
+                bg: 'white',
+                color: 'gray.500'
               }}>
               Get Started
             </Button>
-            <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+            {/* <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
               Learn more
-            </Button>
+            </Button> */}
             <Box>
               <Icon
                 as={Arrow}
