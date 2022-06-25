@@ -9,6 +9,8 @@ import CreatePet from './components/create-post/CreatePet'
 import Web3 from 'web3';
 import MyPet from './abis/Pet.json';
 import {useState} from 'react';
+import { ChakraProvider } from '@chakra-ui/react'
+
 function App() {
 
   const [account, setAccount] = useState('')
@@ -54,6 +56,7 @@ function App() {
 
   return (
     <Router>
+      <ChakraProvider>
       <div className="cl">
         <Navbar account={account} connectWallet={connectWallet} />
         <Route exact path="/" component={Home} />
@@ -65,6 +68,7 @@ function App() {
         </Switch>
         <Footer />
       </div>
+      </ChakraProvider>
     </Router>
   )
 }
