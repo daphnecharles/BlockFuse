@@ -14,7 +14,26 @@ BlockFuse integrate with the following technologies:
 * WalletConnect
 * Lens Protocol
 
-## Demo
+## Submission Details
+
+* Video Demo:
+* Pitch Deck:
+* Blog Article:
+* Twitter:
+
+
+* Smart contract creation transaction:
+* Smart contract deployed on Polygon Mumbai testnet:
+* Solidity code for smart contract:
+* NFT hosted on IPFS (NFT.Storage):
+* dApp deployed on IPFS (Fleek):
+* WalletConnect code:
+* Lens Protocol code:
+* Livepeer code:
+* OpenSea code:
+* Tatum code:
+* Covalent code:
+
 
 
 
