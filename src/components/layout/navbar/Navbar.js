@@ -30,12 +30,12 @@ import {
     return (
       <Box>
         <Flex
-          bg={useColorModeValue('white', 'gray.800')}
-          color={useColorModeValue('gray.600', 'white')}
+          bg={useColorModeValue('#3B4755')}
+          color="white"
+          boxShadow="0px 4px 25px rgba(0, 0, 0, 0.25)"
           minH={'60px'}
           py={{ base: 2 }}
           px={{ base: 4 }}
-          borderBottom={1}
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
           align={'center'}>
@@ -69,6 +69,7 @@ import {
               fontSize={'sm'}
               fontWeight={400}
               variant={'link'}
+              color="white"
               href={'#'}>
               Sign In
             </Button>
@@ -95,7 +96,7 @@ import {
   }
   
   const DesktopNav = () => {
-    const linkColor = useColorModeValue('gray.600', 'gray.200');
+    const linkColor = "white";
     const linkHoverColor = useColorModeValue('gray.800', 'white');
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
   

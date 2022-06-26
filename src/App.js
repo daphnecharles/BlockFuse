@@ -18,6 +18,7 @@ import Footer from './components/layout/footer/Footer'
 import Home from './components/home-container/home/Home'
 import PetDetails from './components/home-container/pet-details/PetDetails'
 import CreatePet from './components/create-post/CreatePet'
+import TalentProfile from './components/pages/TalentProfile'
 import Web3 from 'web3';
 import MyPet from './abis/Pet.json';
 import {useState} from 'react';
@@ -69,9 +70,10 @@ function App() {
   return (
     <Router>
       <ChakraProvider>
-      <Box className="cl" backgroundColor="#2d2c2c">
+      <Box className="cl" backgroundColor="#1C232C">
         <Navbar account={account} connectWallet={connectWallet} />
         <Route exact path="/" component={Home} />
+        <Route exact path="/talent-profile" component={TalentProfile} />
         <Switch>
           <Route exact path="/create-pet" component={CreatePet} />
           <Route path="/pet-details/:petId">
