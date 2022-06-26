@@ -9,7 +9,6 @@ import {
     VisuallyHidden,
     Image
   } from '@chakra-ui/react';
-  import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { ReactNode } from 'react';
   import logo from './../../../images/blockfuse-logo.png'
   
@@ -82,9 +81,9 @@ import {
             align={{ base: 'center', md: 'center' }}>
             <Text color="white">© 2022 BlockFuse. All rights reserved</Text>
             <Stack direction={'row'} spacing={6}>
-              <SocialButton label={'Twitter'} href={'https://twitter.com/block_fuse'}>
+              {/* <SocialButton label={'Twitter'} href={'https://twitter.com/block_fuse'}>
                 <FaTwitter />
-              </SocialButton>
+              </SocialButton> */}
               {/* <SocialButton label={'YouTube'} href={'#'}>
                 <FaYoutube />
               </SocialButton>
