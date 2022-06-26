@@ -17,7 +17,7 @@ const Feature = ({ title, text, icon }) => {
         {icon}
       </Flex>
       <Text fontWeight={600}>{title}</Text>
-      <Text color={'gray.600'}>{text}</Text>
+      <Text>{text}</Text>
     </Stack>
   );
 };

@@ -105,10 +105,12 @@ import {
             fontFamily={'Inter'}
             fontWeight={'medium'}
             fontSize={'15px'}
-            pb={4}>
+            pb={4}
+            color="gray.800"
+            >
             {content}
           </chakra.p>
-          <chakra.p fontFamily={'Work Sans'} fontWeight={'bold'} fontSize={14}>
+          <chakra.p fontFamily={'Work Sans'} fontWeight={'bold'} fontSize={14} color="gray.800">
             {name}
             <chakra.span
               fontFamily={'Inter'}
@@ -135,6 +137,7 @@ import {
       <Flex
         textAlign={'center'}
         pt={10}
+        pb={20}
         justifyContent={'center'}
         direction={'column'}
         width={'full'}>
@@ -144,7 +147,7 @@ import {
             fontWeight={'bold'}
             fontSize={20}
             textTransform={'uppercase'}
-            color={'purple.400'}>
+            >
             People love us
           </chakra.h3>
           <chakra.h1
@@ -152,7 +155,7 @@ import {
             fontSize={48}
             fontFamily={'Work Sans'}
             fontWeight={'bold'}
-            color={useColorModeValue('gray.700', 'gray.50')}>
+           >
             You're in good company
           </chakra.h1>
           <chakra.h2
@@ -162,10 +165,10 @@ import {
             fontWeight={'medium'}
             color={useColorModeValue('gray.500', 'gray.400')}>
             See why over{' '}
-            <chakra.strong color={useColorModeValue('gray.700', 'gray.50')}>
-              150,000+
+            <chakra.strong>
+              10+ 
             </chakra.strong>{' '}
-            influencers use EEZY to manage their social media content!
+            ETHNewYork Sponsors would want to use BlockFuse to automate their web3 recruitment process to find and nurture high-quality talent!
           </chakra.h2>
         </Box>
         <SimpleGrid
