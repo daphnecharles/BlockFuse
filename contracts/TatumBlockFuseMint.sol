@@ -27,7 +27,7 @@ contract TatumBlockFuseMint is ERC721, ERC721Enumerable, ERC721URIStorage, Pausa
     function pause() public {
         require(
             hasRole(PAUSER_ROLE, _msgSender()),
-            "TatumGeneral721: must have pauser role to pause"
+            "TatumBlockFuseMint: must have pauser role to pause"
         );
         _pause();
     }
@@ -35,7 +35,7 @@ contract TatumBlockFuseMint is ERC721, ERC721Enumerable, ERC721URIStorage, Pausa
     function unpause() public {
         require(
             hasRole(PAUSER_ROLE, _msgSender()),
-            "TatumGeneral721: must have pauser role to pause"
+            "TatumBlockFuseMint: must have pauser role to pause"
         );
         _unpause();
     }
@@ -55,7 +55,7 @@ contract TatumBlockFuseMint is ERC721, ERC721Enumerable, ERC721URIStorage, Pausa
         if (!_publicMint) {
             require(
                 hasRole(MINTER_ROLE, _msgSender()),
-                "TatumGeneral721: must have minter role to mint"
+                "TatumBlockFuseMint: must have minter role to mint"
             );
         }
         _safeMint(to, tokenId);
@@ -78,7 +78,7 @@ contract TatumBlockFuseMint is ERC721, ERC721Enumerable, ERC721URIStorage, Pausa
         if (!_publicMint) {
             require(
                 hasRole(MINTER_ROLE, _msgSender()),
-                "TatumGeneral721: must have minter role to mint"
+                "TatumBlockFuseMint: must have minter role to mint"
             );
         }
         for (uint256 i = 0; i < to.length; i++) {
