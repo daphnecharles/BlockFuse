@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react';
 import Testimonials from "./Testimonials"
 import Features from "./Features"
-import logo from './../../../images/blockfuse-logo.png'
+// import logo from './../../../images/blockfuse-logo.png'
 import {Link} from 'react-router-dom'
 export default function CallToActionWithAnnotation() {
   return (
@@ -23,14 +23,14 @@ export default function CallToActionWithAnnotation() {
           spacing={{ base: 8, md: 14 }}
           py={{ base: 20, md: 36 }}>
         
-          <Image
+          {/* <Image
               alt={'Hero Image'}
               fit={'cover'}
               align={'center'}
               w={'100%'}
               h={'100%'}
               src={logo}
-            />
+            /> */}
               <Heading as='h3' size='lg'>
     Fusing Together Your Skill-Based Identity On-Chain
   </Heading>
