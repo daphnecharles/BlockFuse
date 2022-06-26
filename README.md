@@ -28,7 +28,13 @@ BlockFuse integrate with the following technologies:
 * NFT hosted on IPFS (NFT.Storage):
 * dApp objects uploaded and deployed to IPFS via Fleek Javascript SDK: [floral-boat-4610.on.fleek.co](https://curly-credit-5185.on.fleek.co/)
 * WalletConnect code:
-* Lens Protocol code:
+* Lens Protocol:
+*  -Follow Smart Contract Module
+*  -NFT Profile Creation NFT Module
+*  Locally Deployed Contracts for Modules
+*  ![image](https://user-images.githubusercontent.com/100870737/175800469-ab123013-ec8b-4289-80ff-50336e9d3f45.png)
+
+*  
 * Livepeer code:
 * OpenSea code:
 * Tatum code:
