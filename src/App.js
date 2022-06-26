@@ -10,7 +10,8 @@ import Web3 from 'web3';
 import MyPet from './abis/Pet.json';
 import {useState} from 'react';
 import { ChakraProvider } from '@chakra-ui/react'
-
+import SignUp from './components/home-container/home/SignUp'
+import RecruiterSignUp from './components/home-container/home/RecruiterSignUp'
 function App() {
 
   const [account, setAccount] = useState('')
@@ -60,6 +61,10 @@ function App() {
       <div className="cl">
         <Navbar account={account} connectWallet={connectWallet} />
         <Route exact path="/" component={Home} />
+        <Route exact path="/SignUp" component={SignUp} />
+        <Route exact path="/RecruiterSignUp" component={RecruiterSignUp} />
+
+
         <Switch>
           <Route exact path="/create-pet" component={CreatePet} />
           <Route path="/pet-details/:petId">

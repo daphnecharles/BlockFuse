@@ -18,8 +18,7 @@ import MoreIcon from '@material-ui/icons/MoreVert'
 import { StylesProvider } from '@material-ui/core/styles'
 import './Navbar.css'
 import logo from '../../../images/logo.jpg'
-
-export const Navbar = () => {
+export default function Navbar () {
   const [anchorEl, setAnchorEl] = useState(null)
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null)
 
