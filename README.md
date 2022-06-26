@@ -33,6 +33,7 @@ BlockFuse integrate with the following technologies:
 * OpenSea code:
 * Tatum code:
 * Covalent code:
+* StorJ: https://loom.com/share/53d4c94261a444bf9d6b5aac7cc3a1ad
 
 
 
