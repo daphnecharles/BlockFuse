@@ -5,9 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.brand-button {
+  background: rgb(255,105,22);
+background: linear-gradient(90deg, rgba(255,105,22,1) 35%, rgba(247,179,0,1) 100%);
 }
