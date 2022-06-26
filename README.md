@@ -32,7 +32,9 @@ BlockFuse integrate with the following technologies:
 *  -Follow Smart Contract Module
 *  -NFT Profile Creation NFT Module
 *  Locally Deployed Contracts for Modules
-*  ![image](https://user-images.githubusercontent.com/100870737/175800469-ab123013-ec8b-4289-80ff-50336e9d3f45.png)
+*  ![image](https://user-images.githubusercontent.com/100870737/175800539-291d2ab5-b5e7-483c-8806-ee969fa8d1e5.png)
+
+
 
 *  
 * Livepeer code:
