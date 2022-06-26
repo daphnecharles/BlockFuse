@@ -18,7 +18,7 @@ import Tatum from '../../images/Tatum-8.png'
     {brand: "IPFS", src: IPFS, title: "Encode Club Bootcamp Graduate"},
     {brand: "Lens Protocol", src: Lens, title: "7 Days of Lens Protocol Participant"},
     {brand: "Tatum", src: Tatum, title: "ETHAmsterdam Bounty Winner"},
-    {brand: "Polygon", src: Polygon, title: "Web3 Camp Bootcamp Graduate"}
+    {brand: "Polygon", src: Polygon, title: "Web3 Camp Graduate"}
   ]
     
   
@@ -38,10 +38,10 @@ import Tatum from '../../images/Tatum-8.png'
     
           <Box
             rounded={'lg'}
-            mt={12}>
+            >
             <Image
               rounded={'lg'}
-       
+                height={100}
               objectFit={'cover'}
               src={item.src}
             />
@@ -50,16 +50,16 @@ import Tatum from '../../images/Tatum-8.png'
             <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
              {item.brand}
             </Text>
-            <Heading fontSize={'xl'} fontFamily={'body'} fontWeight={500}>
+            <Heading fontSize={'l'} fontFamily={'body'} fontWeight={500}>
               {item.title}
             </Heading>
             <Stack direction={'row'} align={'center'}>
-              <Text fontWeight={800} fontSize={'xl'}>
+              {/* <Text fontWeight={800} fontSize={'xl'}>
                 $57
-              </Text>
-              <Text textDecoration={'line-through'} color={'gray.600'}>
+              </Text> */}
+              {/* <Text textDecoration={'line-through'} color={'gray.600'}>
                 $199
-              </Text>
+              </Text> */}
             </Stack>
           </Stack>
         </Box>

@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useRef} from 'react';
 import {
     Box,
     VStack,
@@ -15,6 +15,9 @@ import {
 import UserCard from '../commons/UserCard'
 import BadgeDisplay from '../commons/BadgeDisplay'
 import { Player } from 'video-react';
+import { generateURL } from '../commons/Livepeer';
+import { uploadAsset } from '../commons/Livepeer';
+
 const axios = require('axios');
 
 
@@ -37,28 +40,38 @@ const axios = require('axios');
   
   export default function GridListWithCTA() {
 
-    const [file, setFile] = useState()
+    const inputRef = useRef();
 
-  function handleChange(event) {
-    setFile(event.target.files[0])
-  }
-  
-  function handleSubmit(event) {
-    event.preventDefault()
-    const url = 'http://localhost:3000/uploadFile';
-    const formData = new FormData();
-    formData.append('file', file);
-    formData.append('fileName', file.name);
-    const config = {
-      headers: {
-        'content-type': 'multipart/form-data',
-      },
-    };
-    axios.post(url, formData, config).then((response) => {
-      console.log(response.data);
-    });
+    const [selectedFile, setSelectedFile] = useState();
+	const [isFilePicked, setIsFilePicked] = useState(false);
+    const [source, setSource] = useState();
+    const [video, setVideo] = useState();
 
-  }
+	const changeHandler = (event) => {
+		const file = event.target.files[0];
+        
+    // const url = URL.createObjectURL(file);
+    setSource(file);
+	};
+    const handleChoose = (event) => {
+        inputRef.current.click();
+      };
+
+	const handleSubmission = async () => {
+
+        const playbackId = await generateURL(source);
+        const livepeerURL = `https://livepeercdn.com/asset/${playbackId}/video`;
+
+        setTimeout(() => {
+            console.log("Delayed for 1 second.");
+            setVideo(livepeerURL);
+          }, 9000)
+
+        
+        console.log('livepeer url', livepeerURL)
+        console.log(source);
+	};
+
 
 
     return (
@@ -70,44 +83,51 @@ const axios = require('axios');
             md: 'repeat(2, 1fr)',
           }}
           gap={4}>
-          <GridItem colSpan={1}>
-            <VStack alignItems="flex-start" spacing="20px">
+          <GridItem>
+            <VStack alignItems="flex-start" pr={10}>
               <UserCard/>
             </VStack>
           </GridItem>
           <GridItem>
             <Flex direction="column">
             <Heading as='h2' size='xl' pb={30}>
-    Bio
+    Talent Profile
+  </Heading>
+  <Heading as='h3' size='s' pb={10}>
+    Customize Your Profile with a Personalized Video!
   </Heading>
   <Box>
-  <Player>
-      <source src={file} />
-    </Player>  
-  <Input type="file" id="livepeer-video" placeholder='Upload candidate video' onChange={handleChange}/>
-  <Button type="submit">Upload</Button>
+  <video
+          className="VideoInput_video"
+          width="100%"
+          controls
+          src={video}
+        />
+  <Input type="file" id="livepeer-video" ref={inputRef} placeholder='Upload candidate video' onChange={changeHandler}/>
+  {isFilePicked ? (
+				<div>
+					<p>Filename: {selectedFile.name}</p>
+					<p>Filetype: {selectedFile.type}</p>
+					<p>Size in bytes: {selectedFile.size}</p>
+					<p>
+						lastModifiedDate:{' '}
+						{selectedFile.lastModifiedDate.toLocaleDateString()}
+					</p>
+				</div>
+			) : (
+				<p>Select a file to show details</p>
+			)}
+  <Button type="submit" onClick={handleSubmission} bg="linear-gradient(90deg, rgba(255,105,22,1) 35%, rgba(247,179,0,1) 100%)" mb={10}>Upload</Button>
   </Box>
-              <chakra.p>
-                Provide your customers a story they would enjoy keeping in mind
-                the objectives of your website. Pay special attention to the tone
-                of voice.
-              </chakra.p>
+ 
             </Flex>
           </GridItem>
         </Grid>
         <Divider mt={12} mb={12} />
-        <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'} textAlign="center" mb={20}>
+        <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'} textAlign="center" mb={10}>
                 Proof-of-Skill Badges
               </Heading>
-        <Grid
-          templateColumns={{
-            base: 'repeat(1, 1fr)',
-            sm: 'repeat(2, 1fr)',
-            md: 'repeat(4, 1fr)',
-          }}
-          gap={{ base: '8', sm: '12', md: '16' }}>
-          <BadgeDisplay/>
-        </Grid>
+        <BadgeDisplay/>
       </Box>
     );
   }

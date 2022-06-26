@@ -13,6 +13,7 @@ import {
 import Testimonials from "./Testimonials"
 import Features from "./Features"
 import logo from './../../../images/blockfuse-logo.png'
+import {Router, Link, Navigate, Redirect} from 'react-router-dom' 
 
 export default function CallToActionWithAnnotation() {
   return (
@@ -52,6 +53,7 @@ export default function CallToActionWithAnnotation() {
             align={'center'}
             alignSelf={'center'}
             position={'relative'}>
+                <Link to="/signup">
             <Button
             className="brand-button"
             bg="linear-gradient(90deg, rgba(255,105,22,1) 35%, rgba(247,179,0,1) 100%)"
@@ -63,9 +65,13 @@ export default function CallToActionWithAnnotation() {
               }}>
               Get Started
             </Button>
-            {/* <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+            </Link>
+            
+            <Button variant={'link'} colorScheme={'white'} size={'sm'}>
+                
               Learn more
-            </Button> */}
+            </Button>
+            
             <Box>
               <Icon
                 as={Arrow}

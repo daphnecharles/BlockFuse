@@ -19,10 +19,19 @@ import Home from './components/home-container/home/Home'
 import PetDetails from './components/home-container/pet-details/PetDetails'
 import CreatePet from './components/create-post/CreatePet'
 import TalentProfile from './components/pages/TalentProfile'
+import Signup from './components/pages/Signup'
+import RecruiterSignup from './components/pages/RecruiterSignup'
 import Web3 from 'web3';
 import MyPet from './abis/Pet.json';
 import {useState} from 'react';
 import { ChakraProvider } from '@chakra-ui/react'
+import { Web3ReactProvider } from '@web3-react/core'
+import { Web3Provider } from "@ethersproject/providers";
+
+function getLibrary(provider) {
+  return new Web3Provider(provider);
+}
+
 
 function App() {
 
@@ -70,10 +79,13 @@ function App() {
   return (
     <Router>
       <ChakraProvider>
+      <Web3ReactProvider getLibrary={getLibrary}>
       <Box className="cl" backgroundColor="#1C232C">
         <Navbar account={account} connectWallet={connectWallet} />
         <Route exact path="/" component={Home} />
         <Route exact path="/talent-profile" component={TalentProfile} />
+        <Route exact path="/signup" component={Signup} />
+        <Route exact path="/recruiter-signup" component={RecruiterSignup} />
         <Switch>
           <Route exact path="/create-pet" component={CreatePet} />
           <Route path="/pet-details/:petId">
@@ -82,6 +94,8 @@ function App() {
         </Switch>
         <Footer />
       </Box>
+     
+      </Web3ReactProvider>
       </ChakraProvider>
     </Router>
   )
