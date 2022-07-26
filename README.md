@@ -1,12 +1,17 @@
 # BlockFuse. Your Professional Identity On-Chain. 
 BlockFuse is web3 talent development and recruitment infrastructure. BlockFuse reinvents talent profiles with proof-of-skill badges and intelligently matches them with job opportunities at web3 companies or DAOs. Our dApp revolutionizes the way recruitment works by making recruitment skill-based, engagement-focused, and inclusive. 
 
-#Recent Uodates
+#Updates
 Deployed V2 of the Primary Contract for BlockFuse Coin Minting and Burning w/ IPFS and Polygon Mumbai Test Network and Leveraged Lens Protocol API for User Profile Creation
 
-https://mumbai.polygonscan.com/tx/0x7aa9b5a179ccce28e95a950651644d36c5ceea26d0ea641d6e4063a111f1a600
 
-https://mumbai.polygonscan.com/tx/0x7aa9b5a179ccce28e95a950651644d36c5ceea26d0ea641d6e4063a111f1a600
+![image](https://user-images.githubusercontent.com/100870737/181013845-699603b7-702c-4329-aa0f-05f8e7e6b3dc.png)
+*https://mumbai.polygonscan.com/tx/0x7aa9b5a179ccce28e95a950651644d36c5ceea26d0ea641d6e4063a111f1a600
+
+
+*![image](https://user-images.githubusercontent.com/100870737/181013635-b26f601d-48b0-4c75-acff-82c9edf6235a.png)
+https://ipfs.io/ipfs/QmNZUVohJA1UnEqGPgpZHiBSGtqSYWfMasrH5LTQdhgUT8?filename=BlockFuse_Coin.jpg
+
 
 # Technologies
 BlockFuse integrate with the following technologies:
