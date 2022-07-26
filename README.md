@@ -77,12 +77,12 @@ https://mumbai.polygonscan.com/tx/0xba850f80a6af4c6a6cdb1c25a1418f59a59a7c50933d
 Deployed V2 of the Primary Contract for BlockFuse Coin Minting and Burning w/ IPFS and Polygon Mumbai Test Network and Leveraged Lens Protocol API for User Profile Creation
 
 
-![image](https://user-images.githubusercontent.com/100870737/181013845-699603b7-702c-4329-aa0f-05f8e7e6b3dc.png)
-*https://mumbai.polygonscan.com/tx/0x7aa9b5a179ccce28e95a950651644d36c5ceea26d0ea641d6e4063a111f1a600
+* ![image](https://user-images.githubusercontent.com/100870737/181013845-699603b7-702c-4329-aa0f-05f8e7e6b3dc.png)
+* https://mumbai.polygonscan.com/tx/0x7aa9b5a179ccce28e95a950651644d36c5ceea26d0ea641d6e4063a111f1a600
 
 
-*![image](https://user-images.githubusercontent.com/100870737/181013635-b26f601d-48b0-4c75-acff-82c9edf6235a.png)
-https://ipfs.io/ipfs/QmNZUVohJA1UnEqGPgpZHiBSGtqSYWfMasrH5LTQdhgUT8?filename=BlockFuse_Coin.jpg
+* ![image](https://user-images.githubusercontent.com/100870737/181013635-b26f601d-48b0-4c75-acff-82c9edf6235a.png)
+* https://ipfs.io/ipfs/QmNZUVohJA1UnEqGPgpZHiBSGtqSYWfMasrH5LTQdhgUT8?filename=BlockFuse_Coin.jpg
 
 
 
