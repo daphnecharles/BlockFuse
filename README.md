@@ -73,7 +73,7 @@ Loco for Lens:
 https://mumbai.polygonscan.com/tx/0xba850f80a6af4c6a6cdb1c25a1418f59a59a7c50933d2af98fcb2ce2f812d2c0
 
 
-#Updates
+# Updates
 Deployed V2 of the Primary Contract for BlockFuse Coin Minting and Burning w/ IPFS and Polygon Mumbai Test Network and Leveraged Lens Protocol API for User Profile Creation
 
 
